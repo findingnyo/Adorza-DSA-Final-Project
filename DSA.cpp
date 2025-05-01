@@ -78,9 +78,9 @@ void displayAll() {
 void play() {
     int score = 0;
     for (int i = 0; i < questionCount; ++i) {
-        cout << "(" << questions[i].category << ") " << questions[i].text << "\n";
+        cout << "(" << questions[i].category << ") " << questions[i].text << endl;
         for (int j = 0; j < 4; ++j) {
-            cout << "   " << char('A' + j) << ". " << questions[i].options[j] << "\n";
+            cout << "   " << char('A' + j) << ". " << questions[i].options[j] << endl;
         }
         char answer;
         cout << "Your answer (A-D): ";
@@ -95,7 +95,7 @@ void play() {
         }
         cout << "\n";
     }
-    cout << "Quiz finished! Your score: " << score << "/" << questionCount << "\n";
+    cout << "Quiz finished! Your score: " << score << "/" << questionCount << endl;
 }
 
 // SEARCH
@@ -108,7 +108,7 @@ void search() {
 
     for (int i = 0; i < questionCount; ++i) {
         if (questions[i].text.find(keyword) != string::npos) {
-            cout << "[" << i << "] (" << questions[i].category << ") " << questions[i].text << "\n";
+            cout << "[" << i << "] (" << questions[i].category << ") " << questions[i].text << endl;
         }
     }
 }
@@ -225,12 +225,10 @@ int main() {
         } else if (x == 6) {
             displayAll();
         } else if (x == 7) {
-            cout << "Thank you for playing TechQuest!\n";
+            cout << "Thank you for playing TechQuest!" << endl;
         } else {
-            cout << "Invalid choice. Please try again.\n";
+            cout << "Invalid choice. Please try again." << endl;
         }
 
     } while (choice != 7);
-
-    return 0;
 }
