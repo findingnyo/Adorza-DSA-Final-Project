@@ -189,9 +189,9 @@ void addSampleQuestions() {
 }
 
 int main() {
-    cout << "=====================================\n";
+    cout << "========================================\n";
     cout << "   Welcome to TechQuest: Play & Learn!\n";
-    cout << "=====================================\n";
+    cout << "========================================\n";
     cout << "Test your knowledge on Science, Tech, and Society!\n";
 
     addSampleQuestions();
