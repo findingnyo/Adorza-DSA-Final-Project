@@ -44,7 +44,7 @@ void addQues() {
 
 // DELETING QUESTIONS
 
-void delete() {
+void del() {
     int index;
     cout << "Enter index to delete: ";
     cin >> index;
@@ -206,7 +206,7 @@ int main() {
         } else if (x == 2) {
             addQues();
         } else if (x == 3) {
-            deleteQuestion();
+            del();
         } else if (x == 4) {
             sort();
         } else if (x == 5) {
@@ -219,5 +219,5 @@ int main() {
             cout << "Invalid choice. Please try again." << endl;
         }
 
-    } while (choice != 7);
+    } while (x != 7);
 }
